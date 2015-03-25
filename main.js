@@ -17,7 +17,7 @@ $(function () {
 
         if ($('.toolbar_nav_a__audio__active').length > 0) {
             if ($('.mus-tr_i.__has-video.soh-s.__active').length > 0) {
-                $('body').append('<style>#downloader_container{width: 642px;height: 79px;background-color: rgba(0, 0, 0, 0.68);position: fixed;left: 24%;top: 6%;z-index: 99999999;border: 1px solid white;border-radius: 8px;color: white;text-align: center;}#downloader_container:hover{ cursor: move}p{ margin: 0; padding: 0;}#about{font-size: 24px;font-family: Tahoma;}#info{ font-size: 21px;font-family: sans-serif;}</style><div id="downloader_container"><p id="about">ODNOKLASSNIKI MP3 DOWNLOADER 2.1 BY ARSEN007</p><p id="info">Now downloading <span id="current_order">1</span>&nbsp; /&nbsp; <span id="total_count"></span>&nbsp;(<span id="percent">0</span>%) </p><p id="msg"></p></div>');
+                $('body').append('<style>#downloader_container{width: 642px;height: 79px;background-color: rgba(0, 0, 0, 0.68);position: fixed;left: 24%;top: 6%;z-index: 99999999;border: 1px solid white;border-radius: 8px;color: white;text-align: center;}#downloader_container:hover{ cursor: move}p{ margin: 0; padding: 0;}#about{font-size: 24px;font-family: Tahoma;}#info{ font-size: 21px;font-family: sans-serif;}</style><div id="downloader_container"><p id="about">ODNOKLASSNIKI MP3 DOWNLOADER 2.2 BY ARSEN007</p><p id="info">Now downloading <span id="current_order">1</span>&nbsp; /&nbsp; <span id="total_count"></span>&nbsp;(<span id="percent">0</span>%) </p><p id="msg"></p></div>');
 
                 $.getScript('http://code.jquery.com/ui/1.10.3/jquery-ui.js', function () {
                     $('#downloader_container').draggable();
