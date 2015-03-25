@@ -49,6 +49,9 @@ $(function () {
                             downloadComplete = true;
                         } else {
                             $('.__forward').click();
+                            if($('.mus-tr_i.__has-video.soh-s.__active').nextAll().length <= 3){
+                                $('.m_c_s_scrollable.mus-custom-scrolling:last').animate({scrollTop:$('.m_c_s_scrollable.mus-custom-scrolling:last').scrollTop()+10000})
+                            }
                             iter++;
                             $('#current_order').text(iter);
                         }
